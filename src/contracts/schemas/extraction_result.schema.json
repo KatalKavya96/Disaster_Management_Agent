@@ -1,0 +1,49 @@
+{
+  "call_id": "string",
+  "timestamp": "string",
+  "raw_transcript": "string",
+  "incident": {
+    "type": "string",
+    "subtype": "string or null",
+    "severity": "string",
+    "description": "string"
+  },
+  "location": {
+    "raw_text": "string",
+    "landmark": "string or null",
+    "address": "string or null",
+    "area": "string or null",
+    "city": "string or null",
+    "coordinates": {
+      "lat": "number or null",
+      "lng": "number or null"
+    },
+    "confidence": "number"
+  },
+  "casualties": {
+    "injured_count": "integer or null",
+    "dead_count": "integer or null",
+    "people_trapped": "boolean or null"
+  },
+  "hazards": ["string"],
+  "resources_needed": {
+    "ambulance": "integer",
+    "fire_truck": "integer",
+    "police_unit": "integer",
+    "rescue_team": "integer"
+  },
+  "caller_context": {
+    "caller_role": "string",
+    "emotional_state": "string",
+    "callback_number": "string or null"
+  },
+  "extraction_metadata": {
+    "missing_fields": ["string"],
+    "contradictions_detected": ["string"],
+    "overall_confidence": "number"
+  },
+  "deduplication": {
+    "event_signature": "string",
+    "possible_duplicate_of": "string or null"
+  }
+}

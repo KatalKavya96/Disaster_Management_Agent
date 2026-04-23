@@ -1,0 +1,51 @@
+{
+  "call_id": "CALL_0001",
+  "timestamp": "2026-04-23T15:10:00Z",
+  "raw_transcript": "There is a building on fire near Green Park Metro Station. People are trapped on the second floor. Please send fire brigade and ambulances quickly.",
+  "incident": {
+    "type": "fire",
+    "subtype": "building_fire",
+    "severity": "critical",
+    "description": "Fire; with hazards: fire; possible trapped persons reported; severity assessed as critical"
+  },
+  "location": {
+    "raw_text": "near green park metro station",
+    "landmark": null,
+    "address": null,
+    "area": null,
+    "city": null,
+    "coordinates": {
+      "lat": null,
+      "lng": null
+    },
+    "confidence": 0.85
+  },
+  "casualties": {
+    "injured_count": null,
+    "dead_count": null,
+    "people_trapped": true
+  },
+  "hazards": [
+    "fire"
+  ],
+  "resources_needed": {
+    "ambulance": 2,
+    "fire_truck": 3,
+    "police_unit": 2,
+    "rescue_team": 1
+  },
+  "caller_context": {
+    "caller_role": "unknown",
+    "emotional_state": "panicked",
+    "callback_number": null
+  },
+  "extraction_metadata": {
+    "missing_fields": [],
+    "contradictions_detected": [],
+    "overall_confidence": 0.95
+  },
+  "deduplication": {
+    "event_signature": "fire|near_green_park_metro_station",
+    "possible_duplicate_of": null
+  }
+}
